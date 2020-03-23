@@ -11,9 +11,12 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var imgCharacter: UIImageView!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.title = "ice cream"  
+        tabBarItem.badgeValue = String(30)      
+        imgCharacter.image = UIImage(named:"ice cream")
     }
 
 
