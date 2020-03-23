@@ -11,10 +11,13 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     @IBOutlet weak var imgCharacter: UIImageView!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "Lion"    
+        tabBarItem.badgeValue = String(20)   
+        imgCharacter.image = UIImage(named:"Lion")
         
         tabBarItem.badgeValue = String(100)
     }
